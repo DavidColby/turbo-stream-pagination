@@ -1,3 +1,13 @@
+GIT
+  remote: https://github.com/hotwired/turbo-rails.git
+  revision: 0225c09bbd25f744a5f2b98dda5b143ad544eb5a
+  branch: main
+  specs:
+    turbo-rails (1.1.1)
+      actionpack (>= 6.0.0)
+      activejob (>= 6.0.0)
+      railties (>= 6.0.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -131,6 +141,8 @@ GEM
     nio4r (2.5.8)
     nokogiri (1.13.8-x86_64-darwin)
       racc (~> 1.4)
+    pagy (5.10.1)
+      activesupport
     public_suffix (5.0.0)
     puma (5.6.5)
       nio4r (~> 2.0)
@@ -189,10 +201,6 @@ GEM
     strscan (3.0.4)
     thor (1.2.1)
     timeout (0.3.0)
-    turbo-rails (1.1.1)
-      actionpack (>= 6.0.0)
-      activejob (>= 6.0.0)
-      railties (>= 6.0.0)
     tzinfo (2.0.5)
       concurrent-ruby (~> 1.0)
     web-console (4.2.0)
@@ -222,6 +230,7 @@ DEPENDENCIES
   debug
   jbuilder
   jsbundling-rails
+  pagy (~> 5.10)
   puma (~> 5.0)
   rails (~> 7.0.4)
   redis (~> 4.0)
@@ -229,7 +238,7 @@ DEPENDENCIES
   sprockets-rails
   sqlite3 (~> 1.4)
   stimulus-rails
-  turbo-rails
+  turbo-rails!
   tzinfo-data
   web-console
   webdrivers

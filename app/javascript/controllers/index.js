@@ -4,5 +4,8 @@
 
 import { application } from "./application"
 
+import AutoclickController from "./autoclick_controller"
+application.register("autoclick", AutoclickController)
+
 import HelloController from "./hello_controller"
 application.register("hello", HelloController)
